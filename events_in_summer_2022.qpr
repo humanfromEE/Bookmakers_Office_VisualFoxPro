@@ -1,0 +1,8 @@
+SELECT Event_table.id_e AS id_події,;
+  Event_table.name_e AS назва_події,;
+  Event_table.date_start_e AS дата_початку,;
+  Event_table.date_end_e AS дата_завершення;
+ FROM data_base!event_table;
+ WHERE  Event_table.date_start_e >= DATE(2022, 06, 01);
+   AND  Event_table.date_end_e <= DATE(2022, 08, 31);
+ ORDER BY Event_table.date_start_e, Event_table.date_end_e

@@ -1,0 +1,13 @@
+FUNCTION GetLengthNumber(value_number)
+	length_number = 0
+	number_10 = 10
+	number_10_power = 0
+	DO WHILE (.T.)
+		number_10_power = number_10_power + 1
+		length_number = length_number + 1
+		IF (length_number < (number_10 ^ number_10_power) ) THEN
+			EXIT
+		ENDIF
+	ENDDO
+	RETURN length_number
+ENDFUNC

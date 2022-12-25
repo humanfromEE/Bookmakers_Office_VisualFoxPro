@@ -1,0 +1,10 @@
+SELECT Worker_table.fullname_w AS піп,;
+  Worker_table.salary_w AS зарплата,;
+  Departament_table.name_d AS назва_відділу;
+ FROM ;
+     data_base!departament_table ;
+    INNER JOIN data_base!worker_table ;
+   ON  Departament_table.id_d = Worker_table.id_d_w;
+ WHERE  Worker_table.salary_w >= 300;
+   AND  Worker_table.salary_w <= 500;
+ ORDER BY Worker_table.salary_w

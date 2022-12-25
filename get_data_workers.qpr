@@ -1,0 +1,9 @@
+SELECT Worker_table.id_w AS id, Worker_table.fullname_w AS піп,;
+  Worker_table.number_w AS номер, Worker_table.salary_w AS зарплата,;
+  Departament_table.name_d AS назва_відділу,;
+  Worker_table.address_w AS адреса;
+ FROM ;
+     data_base!departament_table ;
+    INNER JOIN data_base!worker_table ;
+   ON  Departament_table.id_d = Worker_table.id_d_w;
+ ORDER BY Worker_table.fullname_w

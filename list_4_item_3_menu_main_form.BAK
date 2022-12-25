@@ -1,0 +1,7 @@
+user_answer = MESSAGEBOX("Ви дійсно бажаєте закрити головну форму?", 1 + 32 + 256, "ПРОЦЕС ЗАКРИВАННЯ ГОЛОВНОЇ ФОРМИ")
+IF (user_answer = 1) THEN
+	CLOSE TABLES ALL
+	_SCREEN.ActiveForm.release()
+	CLOSE ALL
+	MODIFY PROJECT _VFP.DefaultFilePath + "\project.pjx"
+ENDIF

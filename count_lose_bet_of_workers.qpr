@@ -1,0 +1,12 @@
+SELECT Worker_table.fullname_w AS піп_працівника,;
+  COUNT(Bet_table.id_b) AS кількість_поразок;
+ FROM ;
+     data_base!worker_table ;
+    INNER JOIN data_base!bet_table ;
+   ON  Worker_table.id_w = Bet_table.id_w_b ;
+    INNER JOIN data_base!event_table ;
+   ON  Event_table.id_e = Bet_table.id_e_b;
+ WHERE  Event_table.id_re_e <> Bet_table.id_re_b;
+   AND  Bet_table.process_status_b = ( .F. );
+ GROUP BY Worker_table.fullname_w
+

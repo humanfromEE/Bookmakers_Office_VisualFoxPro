@@ -1,0 +1,4 @@
+* Для повторного тестування даних
+
+UPDATE data_base!worker_table SET update_data_w = .T. WHERE update_data_w = .F.
+UPDATE data_base!bet_table SET update_data_w = .T. WHERE process_status_b = .F.

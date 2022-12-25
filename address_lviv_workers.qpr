@@ -1,0 +1,10 @@
+SELECT Worker_table.fullname_w AS п≥п,;
+  Worker_table.number_w AS номер_телефону,;
+  Departament_table.name_d AS назва_в≥дд≥лу;
+ FROM ;
+     data_base!departament_table ;
+    INNER JOIN data_base!worker_table ;
+   ON  Departament_table.id_d = Worker_table.id_d_w;
+ WHERE  Worker_table.address_w LIKE ( "%Ћьв≥в%" );
+   OR  Worker_table.address_w LIKE ( "%льв≥в%" );
+ ORDER BY Worker_table.fullname_w

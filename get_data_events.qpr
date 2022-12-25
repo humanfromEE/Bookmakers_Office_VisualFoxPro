@@ -1,0 +1,13 @@
+SELECT Event_table.id_e AS id, Event_table.name_e AS назва_події,;
+  Result_event_table.name_re AS результат_події,;
+  Type_event_table.name_te AS тип_події,;
+  ROUND(Event_table.desired_options_e / Event_table.all_options_e * 100, 2) AS Відсоток_появи,;
+  ROUND(100 / ROUND(Event_table.desired_options_e / Event_table.all_options_e * 100, 2), 2) AS Коефіціент_появи,;
+  Event_table.date_start_e AS дата_початку,;
+  Event_table.date_end_e AS дата_кінця;
+ FROM ;
+     data_base!type_event_table ;
+    INNER JOIN data_base!event_table ;
+   ON  Type_event_table.id_te = Event_table.id_te_e ;
+    INNER JOIN data_base!result_event_table ;
+   ON  Result_event_table.id_re = Event_table.id_re_e

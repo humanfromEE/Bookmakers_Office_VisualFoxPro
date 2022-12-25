@@ -1,0 +1,8 @@
+SELECT Type_event_table.name_te AS назва_типу_події,;
+  COUNT(Event_table.id_te_e) AS кількість_подій_цього_типу;
+ FROM ;
+     data_base!type_event_table ;
+    INNER JOIN data_base!event_table ;
+   ON  Type_event_table.id_te = Event_table.id_te_e;
+ GROUP BY Type_event_table.name_te;
+ ORDER BY 2 DESC

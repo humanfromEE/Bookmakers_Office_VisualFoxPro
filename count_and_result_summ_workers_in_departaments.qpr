@@ -1,0 +1,9 @@
+SELECT Departament_table.name_d AS назва_відділу,;
+  COUNT(Worker_table.id_d_w) AS кількість_працівників,;
+  SUM(Worker_table.salary_w) AS сума_зарплат_у_відділі;
+ FROM ;
+     data_base!departament_table ;
+    INNER JOIN data_base!worker_table ;
+   ON  Departament_table.id_d = Worker_table.id_d_w;
+ GROUP BY Departament_table.name_d;
+ ORDER BY 3 DESC
